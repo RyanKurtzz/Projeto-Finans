@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #ffc107; 
+    padding: 10px 20px; 
+    color: #fff; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+.navbar a:hover {
+    color: #0056b3; 
+}
+
+.navbar .logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    display: flex; 
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.navbar .menu {
+    display: flex; 
+}
+
+.navbar .btn {
+    padding: 8px 15px; 
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #0056b3; 
+    color: #fff; 
+    text-transform: uppercase; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .btn:hover {
+    background-color: #003f7f; 
+}
+
+#home {
+    background: #ffc107;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+}
+
+#home:hover {
+    background: #ffca28;
+}
+
+.caixa {
+    padding: 60px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer {
+    background: #ffc107;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer p a:hover {
+    color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}

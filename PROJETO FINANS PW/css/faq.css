@@ -1,0 +1,92 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffc107;
+    padding: 15px 0;
+}
+
+#faq {
+    background-color: white;
+    color: #333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.btn-link {
+    font-size: 1.25rem;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+.card .btn-link::after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    font-size: 1.5rem;
+    float: right;
+}
+
+.card .btn-link.collapsed::after {
+    content: '\f105';
+}
+
+
+footer {
+    background-color: #ffc107;
+    color: white;
+    font-size: 0.875rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .btn-link {
+        font-size: 1.1rem;
+    }
+}

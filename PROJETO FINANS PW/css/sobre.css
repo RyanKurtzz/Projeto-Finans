@@ -1,0 +1,185 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #ffc107; 
+    padding: 10px 20px; 
+    color: #fff; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+.navbar a:hover {
+    color: #0056b3; 
+}
+
+.navbar .logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    display: flex; 
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.navbar .menu {
+    display: flex; 
+}
+
+.navbar .btn {
+    padding: 8px 15px; 
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #0056b3; 
+    color: #fff; 
+    text-transform: uppercase; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .btn:hover {
+    background-color: #003f7f; 
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    
+    will-change: transform, opacity;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+#sobre {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+#sobre h1 {
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #sobre h1 {
+        font-size: 2rem;
+    }
+
+    .card-body h5 {
+        font-size: 1.25rem;
+    }
+}
+
+#sobre .btn {
+    font-size: 1.2rem;
+}
+
+
+.footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
